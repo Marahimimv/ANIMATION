@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(9, 9, 119);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.img .cloud{
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    right: -100%;
+    animation:cloud 20s linear infinite ;
+}
+@keyframes cloud{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 100%;
+    }
+}
+.road{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.car{
+    padding: 20%;
+}
+.carswheel{
+    position: relative;
+}
+.carswheel .car{
+    position: absolute;
+}
+
